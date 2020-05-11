@@ -68,8 +68,7 @@ void nomes_clear(string pilha_nomes[TAM], int *ptopo, string valor){
     cout << "Empilhamento de nomes foi esvaziado!" << endl;
 }
 
-void menu(string pilha_nomes[TAM], int *ptopo, string valor){
-    
+void menu(string pilha_nomes[TAM], int *ptopo, string valor){    
     int opcao;
 	
 	do {
