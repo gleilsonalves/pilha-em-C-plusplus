@@ -32,10 +32,6 @@ void nomes_push(string pilha_nomes[TAM], int *ptopo, string valor){
 void informa_nomes(string pilha_nomes[TAM], int *ptopo, string valor){
     char ch;
     
-    for(int i = 0; i < TAM; i++){
-        pilha_nomes[i] = "";
-    } 
-    
     cout << "Lembre-se que soh pode cadastrar 5 nomes no empilhamento." << endl;
     cout << endl;
     do{
@@ -48,6 +44,7 @@ void informa_nomes(string pilha_nomes[TAM], int *ptopo, string valor){
         cin >> ch;
         cout << endl;
     }while(ch == 's');
+    
 }
 
 void nomes_pop(string pilha_nomes[TAM], int *ptopo){
@@ -124,6 +121,10 @@ int main(){
     string valor;
     int *ptopo;
     ptopo = &topo;
+
+    for(int i = 0; i < TAM; i++){
+        pilha_nomes[i] = "";
+    }
 
     menu(pilha_nomes, ptopo, valor);
 }
