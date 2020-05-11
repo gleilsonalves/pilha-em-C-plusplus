@@ -40,8 +40,9 @@ void informa_nomes(string pilha_nomes[TAM], int *ptopo, string valor){
     
     // Loop para inserção dos nomes na pilha
     do{
+        cin.ignore();
         cout << "Digite um nome: ";
-        cin >> valor; // Armazenará o nome digitado dentro da string VALOR
+        getline(cin,valor); // Armazenará o nome digitado dentro da string VALOR
         cout << endl;
         nomes_push(pilha_nomes, ptopo, valor); // Chamada do procedimento "nomes_push" para inserir o nome digitado dentro da pilha
         cout << endl;
